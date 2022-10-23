@@ -44,10 +44,13 @@ p {
     line-height: 2;
     font-weight: normal;
 }
+.profile img {
+    width: 250px;
+}
 
 .bottom-mountain {
 padding-top: 2px;
-bottom: -10px !important;
+/* bottom: -10px !important; */
 vertical-align: text-bottom;
 
 
@@ -173,5 +176,146 @@ a:hover {
   }
   
 
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .top-container{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        align-items: center;
+    }
+    .middle-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-container{
+        display: flex;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 50px auto 0 auto;
+        font-family: 'Sacramento', cursive;
+        color: #760027;
+        text-align: center;
+    
+    
+    }
+    .profile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+    }
+    .profile img{
+        position: relative;
+        text-align: center;
+        width: 200px;
+        justify-self: 0 auto;
+        margin: 15px auto;
+    }
+    p{
+        padding: 15px;
+    }
+    .top-cloud{
+        position: absolute;
+        top: 150px;
+        left: 20px;
+    }
+    .bottom-cloud{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .bottom-mountain{
+        width: 80%;
+        padding-top: 0;
+    }
+    .skills{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-row{
+        width: 80%;
+        padding: 0 20px;
+        margin:  20px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        align-items: right;
+    }
+    .skill-row img {
+        width: 100px;
+    }
+    .art-head {
+        padding: 10px 0px;
+        width: 100%;
+    }
+    .web-head {
+        padding: 10px 0px;
+        width: 100%;
+    }
+.web-head img {
+    margin-left: 20px;
+}
+.web-stuff {
+    width: 20%;
+    float: right;
+}
 
+.web-bio {
+    text-align:justify;
+    width: 100%;
+
+}
+.art-head .web-head {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+.skills h2 {
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+.art-stuff {
+    width: 20%;
+    float: left;
+}
+
+.art-bio{
+    text-align:justify;
+    width: 100%;
+}
+.contact-message{
+    text-align: justify;
+}
+
+hr {
+    margin: 40px auto;
+}
+.contact-me {
+    height: auto;
+    padding-bottom: 40px;
+}
+.bottom-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+}
